@@ -1,14 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Привет солнышко</title>
-</head>
-<body>
-    <h1>Привет солнышко</h1>
-    <p>Ты самая лучшая!</p>
-    <img src="https://ouch-cdn2.icons8.com/vyiUr-0twBIX-twHmH7xOe_ZoAkTni5J5abZAquoG5c/rs:fit:256:295/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMjgw/LzE2OTExMmFlLWQ2/NDctNDYwOC1hM2Q1/LWY5NmViYWJjYjAz/OS5wbmc.png" alt="Изображение-приветствие" width="200">
-    <p><a href="movies.html">Список фильмов</a></p>
-    <button>Нажми меня!</button>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+		<link rel="stylesheet" href="stylesheet/style.css">
+		<title>Привет разработчики</title>
+	</head>
+	<body>
+		<div class="wrapper js-wrapper">
+            <header class="header">
+                <div class="header__container container">
+                    <div class="header__logo js-header-logo">
+                        <img class="header__img" src="images/logo.svg" alt="Логотип">
+                    </div>
+                    <div class="header__actions js-header-actions">
+                        <a class="header__btn btn btn--green">Наш сенсей</a>
+                    </div>
+                    <div class="header__btn-menu js-btn-menu">
+                        <span class="header__icon-menu material-symbols-outlined">menu</span>
+                    </div>
+                </div>
+            </header>
+            <nav class="menu js-nav-menu">
+                <div class="menu__btn-close js-btn-close">
+                    <span class="menu__icon-close material-symbols-outlined">close</span>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="" class="menu__link-item">Наш наставник</a></li>
+                    <li class="menu__item"><a href="" class="menu__link-item">На курсе мы</a></li>
+                    <li class="menu__item"><a href="" class="menu__link-item">Напутствие</a></li>
+                </ul>
+            </nav>
+			<div class="main js-main">
+				<div class="main__container container">
+                    <div class="main__content">
+                        <h1 class="main__title">SD.CODE ВТОРОЙ ПОТОК</h1>
+                        <div class="main__description">
+                            <p class="main__text">Приветствую дорогие друзья, будущие разработчики!</p>
+                            <p class="main__text">Поздравляю всех с первой прошедшей неделей обучения на курсе. Надеюсь у всех обучение идёт очень продуктивно и интересно!</p>
+                        </div>
+                        <div class="main__actions">
+                            <a class="main__btn btn btn--blue" href="#result">На курсе мы</a>
+                            <a class="main__btn btn btn--blue">Напутствие</a>
+                        </div>
+                    </div>
+                    <div class="main__image">
+                        <img class="main__img" src="/images/2210153.png" alt="Код">
+                    </div>
+                </div>
+			</div>
+            <div class="result" id="result">
+                <div class="result__container container">
+                    <div class="result__content">
+                        <h2 class="result__title">На курсе ты</h2>
+                        <div class="result__body">
+                            <div class="result__column">
+                                <div class="result__item item">
+                                    <div class="item__number">1</div>
+                                    <div class="item__description">От и до разберешься в технологиях web разработки: HTML, CSS, JavaScript; сформируешь твердую систему знаний и уверенно пройдешь технические собеседования</div>
+                                </div>
+                            </div>
+                            <div class="result__column">
+                                <div class="result__item item">
+                                    <div class="item__number">2</div>
+                                    <div class="item__description">Получишь практический опыт на заданиях и проектах, которые встретятся на будущей работе</div>
+                                </div>
+                            </div>
+                            <div class="result__column">
+                                <div class="result__item item">
+                                    <div class="item__number">3</div>
+                                    <div class="item__description">Научишься работать с современными инструментами, которые нужны работодателям: CSS препроцессоры, системы сборки, NPM, Git, Rest API</div>
+                                </div>
+                            </div>
+                            <div class="result__column">
+                                <div class="result__item item">
+                                    <div class="item__number">4</div>
+                                    <div class="item__description">Изучишь самый востребованный фреймворк для создания web приложений React.js. Научишься создавать комплексные web приложения на React стеке.</div>
+                                </div>
+                            </div>
+                            <div class="result__column">
+                                <div class="result__item item">
+                                    <div class="item__number">5</div>
+                                    <div class="item__description">Наконец-то избавишься от сомнений и неуверенности, начнешь действовать и с моей помощью и поддержкой поймешь, что разработка это просто и весело</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer__container container">
+                    <div class="footer__logo">
+                        <img class="footer__img" src="images/logo2.svg" alt="Логотип">
+                    </div>
+                    <div class="footer__text">
+                        <a class="footer__link" href="https://sdcode.ru/">Дизайн взят с сайта <span>sdcode.ru</span></a>
+                    </div>
+                </div>
+            </footer>
+		</div>
+			
+		<script src="js/index.js"></script>
+	</body>
 </html>
