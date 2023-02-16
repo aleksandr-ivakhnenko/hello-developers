@@ -57,7 +57,7 @@ body.open-nav-menu {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  background-image: url(/images/bg.png);
+  background-image: url(../images/bg.png);
 }
 .wrapper.open-nav-menu {
   margin-right: 17px;
