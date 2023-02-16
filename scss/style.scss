@@ -51,7 +51,9 @@ body {
     background-image: url(../images/bg.png);
 
     &.open-nav-menu {
+       @media (min-width: 1024px) {
         margin-right: 17px;
+       }
     }
 }
 

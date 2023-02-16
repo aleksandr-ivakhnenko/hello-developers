@@ -59,8 +59,10 @@ body.open-nav-menu {
   overflow: hidden;
   background-image: url(../images/bg.png);
 }
-.wrapper.open-nav-menu {
-  margin-right: 17px;
+@media (min-width: 1024px) {
+  .wrapper.open-nav-menu {
+    margin-right: 17px;
+  }
 }
 
 .container {
