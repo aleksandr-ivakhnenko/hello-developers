@@ -9,41 +9,100 @@
 		<title>Привет разработчики</title>
 	</head>
 	<body>
-		<div class="wrapper js-wrapper">
+		<div class="wrapper">
             <header class="header">
                 <div class="header__container container">
-                    <div class="header__logo js-header-logo">
+                    <div class="header__logo">
                         <img class="header__img" src="images/logo.svg" alt="Логотип">
                     </div>
-                    <div class="header__actions js-header-actions">
-                        <a class="header__btn btn btn--green">Наш сенсей</a>
+                    <div class="header__actions">
+                        <a href="" class="header__btn btn btn--gold js-btn-mentor">Наш наставник</a>
                     </div>
                     <div class="header__btn-menu js-btn-menu">
                         <span class="header__icon-menu material-symbols-outlined">menu</span>
                     </div>
                 </div>
             </header>
+            <div class="overlay js-overlay"></div>
             <nav class="menu js-nav-menu">
-                <div class="menu__btn-close js-btn-close">
-                    <span class="menu__icon-close material-symbols-outlined">close</span>
+                <div class="menu__btn-close">
+                    <span class="menu__icon-close js-btn-menu-close material-symbols-outlined">close</span>
                 </div>
                 <ul class="menu__list">
-                    <li class="menu__item"><a href="" class="menu__link-item js-link-item">Наш наставник</a></li>
-                    <li class="menu__item"><a href="#result" class="menu__link-item js-link-item">На курсе мы</a></li>
-                    <li class="menu__item"><a href="" class="menu__link-item js-link-item">Напутствие</a></li>
+                    <!-- <li class="menu__item"><a href="" class="menu__link-item js-btn-mentor">Наш наставник</a></li> -->
+                    <li class="menu__item"><a href="#result" class="menu__link-item js-link-item-scroll">На курсе мы</a></li>
+                    <!-- <li class="menu__item"><a href="" class="menu__link-item js-link-item">Напутствие</a></li> -->
                 </ul>
+                <div class="menu__description">
+                    <span class="menu__text">Курс Сергея Дмитриевского:</span>
+                </div>
+                <div class="menu__actions">
+                    <a class="menu__btn btn btn--blue-transparent" href="https://sdcode.ru/#rec546432099" target="_blank">Присоединиться</a>
+                    <a class="menu__btn btn btn--pink" href="https://sdcode.ru/#rec543560671" target="_blank">Отзывы</a>
+                </div>
             </nav>
-			<div class="main js-main">
+            <div class="popup js-popup-mentor">
+                <div class="popup__wrapper">
+                    <div class="popup__body">
+                        <span class="popup__btn-close js-btn-popup-close material-symbols-outlined">close</span>
+                        <div class="popup-mentor__body">
+                            <div class="popup-mentor__title">Автор курса и наш наставник <span>Сергей Дмитриевский</span> — тимлид и ведущий разработчик в <span>компании Авито</span></div>
+                            <div class="popup-mentor__row">
+                                <div class="popup-mentor__images">
+                                        <img class="popup-mentor__img" src="images/ava_2.png" alt="Фото">
+                                        <span class="popup-mentor__description">Сергей Дмитриевский,<br> web разработчик и блоггер</span>
+                                </div>
+                                <div class="popup-mentor__content">
+                                        <div class="popup-mentor__row">
+                                            <div class="popup-mentor__column-item ">
+                                                <div class="item item--dark">
+                                                    <div class="item__title item__title--dark item__title--dark-gold material-symbols-outlined">mood</div>
+                                                    <div class="item__description item__description--dark">Умеет объяснять сложное простыми словами</div>
+                                                </div>
+                                            </div>
+                                            <div class="popup-mentor__column-item">
+                                                <div class="item item--dark">
+                                                    <div class="item__title item__title--dark item__title--dark-gold">#hard_work</div>
+                                                    <div class="item__description item__description--dark">Прошел путь от стажера до тимлида в топовой IT компании</div>
+                                                </div>
+                                            </div>
+                                            <div class="popup-mentor__column-item">
+                                                <div class="item item--dark">
+                                                    <div class="item__title item__title--dark">12 лет</div>
+                                                    <div class="item__description item__description--dark">опыта IT сфере</div>
+                                                </div>
+                                            </div>
+                                            <div class="popup-mentor__column-item">
+                                                <div class="item item--dark">
+                                                    <div class="item__title item__title--dark">56k+</div>
+                                                    <div class="item__description item__description--dark">подписчиков на ютуб канале</div>
+                                                </div>
+                                            </div>
+                                            <div class="popup-mentor__column-item">
+                                                <div class="item item--dark">
+                                                    <div class="item__title item__title--dark">10 млн ₽</div>
+                                                    <div class="item__description item__description--dark">заработал в 2022 году</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="main">
 				<div class="main__container container">
                     <div class="main__content">
                         <h1 class="main__title">SD.CODE ВТОРОЙ ПОТОК</h1>
                         <div class="main__description">
-                            <p class="main__text">Приветствую дорогие друзья, будущие разработчики!</p>
-                            <p class="main__text">Поздравляю всех с первой прошедшей неделей обучения на курсе. Надеюсь у всех обучение идёт очень продуктивно и интересно!</p>
+                            <p class="main__text">Приветствую на курсе Сергея Дмитриевского дорогие друзья, будущие разработчики!</p>
+                            <p class="main__text">Надеюсь у всех обучение идёт очень продуктивно и интересно! От души желаю всем удачи, у нас всё получится!</p>
                         </div>
                         <div class="main__actions">
                             <a class="main__btn btn btn--blue" href="#result">На курсе мы</a>
-                            <a class="main__btn btn btn--blue">Напутствие</a>
+                            <!-- <a class="main__btn btn btn--blue">Напутствие</a> -->
+                            <a class="main__btn btn btn--blue" href="https://sdcode.ru/#rec546432099" target="_blank">Присоединиться</a>
                         </div>
                     </div>
                     <div class="main__image">
@@ -53,37 +112,37 @@
 			</div>
             <div class="result" id="result">
                 <div class="result__container container">
-                    <div class="result__content">
-                        <h2 class="result__title">На курсе ты</h2>
-                        <div class="result__body">
+                    <div class="result__body">
+                        <h2 class="result__title">На курсе мы</h2>
+                        <div class="result__content">
                             <div class="result__column">
                                 <div class="result__item item">
-                                    <div class="item__number">1</div>
-                                    <div class="item__description">От и до разберешься в технологиях web разработки: HTML, CSS, JavaScript; сформируешь твердую систему знаний и уверенно пройдешь технические собеседования</div>
+                                    <div class="item__title">1</div>
+                                    <div class="item__description">От и до разберемся в технологиях web разработки: HTML, CSS, JavaScript; сформируем твердую систему знаний и уверенно пройдем технические собеседования</div>
                                 </div>
                             </div>
                             <div class="result__column">
                                 <div class="result__item item">
-                                    <div class="item__number">2</div>
-                                    <div class="item__description">Получишь практический опыт на заданиях и проектах, которые встретятся на будущей работе</div>
+                                    <div class="item__title">2</div>
+                                    <div class="item__description">Получим практический опыт на заданиях и проектах, которые встретятся на будущей работе</div>
                                 </div>
                             </div>
                             <div class="result__column">
                                 <div class="result__item item">
-                                    <div class="item__number">3</div>
-                                    <div class="item__description">Научишься работать с современными инструментами, которые нужны работодателям: CSS препроцессоры, системы сборки, NPM, Git, Rest API</div>
+                                    <div class="item__title">3</div>
+                                    <div class="item__description">Научимся работать с современными инструментами, которые нужны работодателям: CSS препроцессоры, системы сборки, NPM, Git, Rest API</div>
                                 </div>
                             </div>
                             <div class="result__column">
                                 <div class="result__item item">
-                                    <div class="item__number">4</div>
-                                    <div class="item__description">Изучишь самый востребованный фреймворк для создания web приложений React.js. Научишься создавать комплексные web приложения на React стеке.</div>
+                                    <div class="item__title">4</div>
+                                    <div class="item__description">Изучим самый востребованный фреймворк для создания web приложений React.js. Научимся создавать комплексные web приложения на React стеке.</div>
                                 </div>
                             </div>
                             <div class="result__column">
                                 <div class="result__item item">
-                                    <div class="item__number">5</div>
-                                    <div class="item__description">Наконец-то избавишься от сомнений и неуверенности, начнешь действовать и с моей помощью и поддержкой поймешь, что разработка это просто и весело</div>
+                                    <div class="item__title">5</div>
+                                    <div class="item__description">Наконец-то избавимся от сомнений и неуверенности, начнем действовать и с помощью Сергея и поддержкой поймем, что разработка это просто и весело</div>
                                 </div>
                             </div>
                         </div>
