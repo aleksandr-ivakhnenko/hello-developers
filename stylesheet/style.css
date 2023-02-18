@@ -82,6 +82,7 @@ body.scroll-lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   min-height: 55px;
   padding: 5px 55px;
   border-radius: 50px;
@@ -91,6 +92,11 @@ body.scroll-lock {
   font-family: "Montserrat";
   z-index: 1;
   overflow: hidden;
+}
+@media (max-width: 390px) {
+  .btn {
+    font-size: 18px;
+  }
 }
 
 .btn--blue {

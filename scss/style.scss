@@ -66,6 +66,7 @@ body {
     position: relative;
     align-items: center;
     justify-content: center;
+    text-align: center;
     min-height: 55px;
     padding: 5px 55px;
     border-radius: 50px;
@@ -75,6 +76,10 @@ body {
     font-family: "Montserrat";
     z-index: 1;
     overflow: hidden;
+
+    @media (max-width: 390px) {
+        font-size: 18px;
+    }
 }
 
 .btn--blue {
