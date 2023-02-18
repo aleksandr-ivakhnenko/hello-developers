@@ -23,15 +23,16 @@
                     </div>
                 </div>
             </header>
-            <div class="overlay js-overlay"></div>
+            <div class="overlay js-overlay">
+            </div>
             <nav class="menu js-nav-menu">
                 <div class="menu__btn-close">
                     <span class="menu__icon-close js-btn-menu-close material-symbols-outlined">close</span>
                 </div>
                 <ul class="menu__list">
-                    <!-- <li class="menu__item"><a href="" class="menu__link-item js-btn-mentor">Наш наставник</a></li> -->
-                    <li class="menu__item"><a href="#result" class="menu__link-item js-link-item-scroll">На курсе мы</a></li>
-                    <!-- <li class="menu__item"><a href="" class="menu__link-item js-link-item">Напутствие</a></li> -->
+                    <li class="menu__item"><a href="" class="menu__link-item js-link-mentor">Наш наставник</a></li>
+                    <li class="menu__item"><a href="#result" class="menu__link-item js-link-result">На курсе мы</a></li>
+                    <li class="menu__item"><a href="" class="menu__link-item js-link-feedback">Стать разработчиком</a></li>
                 </ul>
                 <div class="menu__description">
                     <span class="menu__text">Курс Сергея Дмитриевского:</span>
@@ -44,49 +45,66 @@
             <div class="popup js-popup-mentor">
                 <div class="popup__wrapper">
                     <div class="popup__body">
-                        <span class="popup__btn-close js-btn-popup-close material-symbols-outlined">close</span>
-                        <div class="popup-mentor__body">
+                        <span class="popup__btn-close js-btn-popup-close-mentor material-symbols-outlined">close</span>
+                        <div class="popup-mentor">
                             <div class="popup-mentor__title">Автор курса и наш наставник <span>Сергей Дмитриевский</span> — тимлид и ведущий разработчик в <span>компании Авито</span></div>
                             <div class="popup-mentor__row">
                                 <div class="popup-mentor__images">
-                                        <img class="popup-mentor__img" src="images/ava_2.png" alt="Фото">
-                                        <span class="popup-mentor__description">Сергей Дмитриевский,<br> web разработчик и блоггер</span>
+                                    <img class="popup-mentor__img" src="images/ava_2.png" alt="Фото">
+                                    <span class="popup-mentor__description">Сергей Дмитриевский,<br> web разработчик и блоггер</span>
                                 </div>
                                 <div class="popup-mentor__content">
-                                        <div class="popup-mentor__row">
-                                            <div class="popup-mentor__column-item ">
-                                                <div class="item item--dark">
-                                                    <div class="item__title item__title--dark item__title--dark-gold material-symbols-outlined">mood</div>
-                                                    <div class="item__description item__description--dark">Умеет объяснять сложное простыми словами</div>
-                                                </div>
-                                            </div>
-                                            <div class="popup-mentor__column-item">
-                                                <div class="item item--dark">
-                                                    <div class="item__title item__title--dark item__title--dark-gold">#hard_work</div>
-                                                    <div class="item__description item__description--dark">Прошел путь от стажера до тимлида в топовой IT компании</div>
-                                                </div>
-                                            </div>
-                                            <div class="popup-mentor__column-item">
-                                                <div class="item item--dark">
-                                                    <div class="item__title item__title--dark">12 лет</div>
-                                                    <div class="item__description item__description--dark">опыта IT сфере</div>
-                                                </div>
-                                            </div>
-                                            <div class="popup-mentor__column-item">
-                                                <div class="item item--dark">
-                                                    <div class="item__title item__title--dark">56k+</div>
-                                                    <div class="item__description item__description--dark">подписчиков на ютуб канале</div>
-                                                </div>
-                                            </div>
-                                            <div class="popup-mentor__column-item">
-                                                <div class="item item--dark">
-                                                    <div class="item__title item__title--dark">10 млн ₽</div>
-                                                    <div class="item__description item__description--dark">заработал в 2022 году</div>
-                                                </div>
+                                    <div class="popup-mentor__row">
+                                        <div class="popup-mentor__column-item ">
+                                            <div class="item item--dark">
+                                                <div class="item__title item__title--dark item__title--dark-gold material-symbols-outlined">mood</div>
+                                                <div class="item__description item__description--dark">Умеет объяснять сложное простыми словами</div>
                                             </div>
                                         </div>
+                                        <div class="popup-mentor__column-item">
+                                            <div class="item item--dark">
+                                                <div class="item__title item__title--dark item__title--dark-gold">#hard_work</div>
+                                                <div class="item__description item__description--dark">Прошел путь от стажера до тимлида в топовой IT компании</div>
+                                            </div>
+                                        </div>
+                                        <div class="popup-mentor__column-item">
+                                            <div class="item item--dark">
+                                                <div class="item__title item__title--dark">12 лет</div>
+                                                <div class="item__description item__description--dark">опыта IT сфере</div>
+                                            </div>
+                                        </div>
+                                        <div class="popup-mentor__column-item">
+                                            <div class="item item--dark">
+                                                <div class="item__title item__title--dark">56k+</div>
+                                                <div class="item__description item__description--dark">подписчиков на ютуб канале</div>
+                                            </div>
+                                        </div>
+                                        <div class="popup-mentor__column-item">
+                                            <div class="item item--dark">
+                                                <div class="item__title item__title--dark">10 млн ₽</div>
+                                                <div class="item__description item__description--dark">заработал в 2022 году</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup js-popup-feedback">
+                <div class="popup__wrapper">
+                    <div class="popup__body">
+                        <span class="popup__btn-close js-btn-popup-close-feedback material-symbols-outlined">close</span>
+                        <div class="popup-feedback">
+                            <div class="popup-feedback__title">Искренне желаю всем <span>удачи и успехов</span> в изучении <span>программирования.</span><br>Но помните, всё зависит от <span>нас самих!</span></div>
+                            <div class="popup-feedback__description">А что-бы точно всё получилось, заполните форму )</div>
+                            <form class="popup-feedback__form" action="">
+                                <input class="popup-feedback__name popup-feedback__input" type="text" id="" placeholder="Имя">
+                                <input class="popup-feedback__email popup-feedback__input" type="email" id="" placeholder="E-mail">
+                                <input class="popup-feedback__tel popup-feedback__input" type="tel" placeholder="Телефон">
+                                <button class="popup-feedback__btn btn btn--blue-transparent" type="button">Отправить</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -96,13 +114,12 @@
                     <div class="main__content">
                         <h1 class="main__title">SD.CODE ВТОРОЙ ПОТОК</h1>
                         <div class="main__description">
-                            <p class="main__text">Приветствую на курсе Сергея Дмитриевского дорогие друзья, будущие разработчики!</p>
-                            <p class="main__text">Надеюсь у всех обучение идёт очень продуктивно и интересно! От души желаю всем удачи, у нас всё получится!</p>
+                            <p class="main__text">Приветствую дорогие друзья, будущие разработчики!</p>
+                            <p class="main__text">Поздравляю всех с ударным началом обучения на курсе Сергея Дмитриевского. <br>Надеюсь Ваше обучение проходит очень продуктивно и интересно!</p>
                         </div>
                         <div class="main__actions">
                             <a class="main__btn btn btn--blue" href="#result">На курсе мы</a>
-                            <!-- <a class="main__btn btn btn--blue">Напутствие</a> -->
-                            <a class="main__btn btn btn--blue" href="https://sdcode.ru/#rec546432099" target="_blank">Присоединиться</a>
+                            <a class="main__btn btn btn--blue js-btn-feedback">Стать разработчиком</a>
                         </div>
                     </div>
                     <div class="main__image">

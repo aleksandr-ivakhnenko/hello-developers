@@ -35,7 +35,6 @@ body {
 	font-weight: 400;
 	font-family: "Montserrat";
     scroll-behavior: smooth;
-    overflow: hidden;
     
     &.scroll-lock {
         overflow: hidden;
@@ -62,6 +61,7 @@ body {
 }
 
 .btn {
+    background: none;
     display: inline-flex;
     position: relative;
     align-items: center;
@@ -461,44 +461,39 @@ body {
 }
 
 .popup {
-    
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow-y: auto;
-        overflow-x: hidden;
-    opacity: 1;
-    visibility: visible;
+    overflow-x: hidden;
+    opacity: 0;
+    visibility: hidden;
     transition: all 0.5s;
-    
+
     &.popup-open {
         opacity: 1;
         visibility: visible;
     }
-    
-    &__wrapper {
-        padding: 50px 50px;
-        min-height: 100%;
-        
-    }
 
+    &__wrapper {
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    
     &__body {
         position: relative;
         border-radius: 25px;
         padding: 50px 50px;
         background-color: #FFFFFF;
         max-width: 1070px;
-        min-width: 500px;
-        min-height: 250px;
-        overflow-y: auto;
-        overflow-x: hidden;
-        
+        min-width: 200px;
         
         & > *:not(:last-child) {
             margin-bottom: 50px;
@@ -524,6 +519,10 @@ body {
 }
 
 .popup-mentor {
+
+    & > *:not(:last-child) {
+        margin-bottom: 30px;
+    }
 
     &__title {
         font-size: 36px;
@@ -633,6 +632,81 @@ body {
     }
 }
 
+.popup-feedback {
+
+    & > *:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 500;
+        color: #363636;
+
+        & :nth-child(1) {
+            color: #6583FE;
+        }
+
+        & :nth-child(2) {
+            color: #FF7EB8;
+        }
+
+        @media (max-width: 570px) {
+            font-size: 20px;
+        }
+    }
+
+    &__description {
+        font-size: 20px;
+        color: #363636;
+    }
+
+    &__form {
+        display: flex;
+        max-width: 500px;
+        flex-direction: column;
+
+        & > *:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        & :last-child {
+            margin-top: 30px;
+        }
+    }
+
+    &__name {
+    }
+
+    &__input {
+        background: none;
+        border: 2px solid #363636;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 55px;
+        padding: 5px 55px;
+        border-radius: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Montserrat";
+        color: #363636;
+
+        &:focus {
+            background-color: rgba(101, 132, 254, 0.156);
+        }
+    }
+
+    &__email {
+    }
+
+    &__tel {
+    }
+
+    &__btn {
+    }
+}
+
 .main {
 	min-height: 100vh;
 	display: flex;
@@ -696,8 +770,7 @@ body {
 
     &__text {
         font-size: 20px;
-        line-height: calc(18px * 1.5);
-    }
+        line-height: calc(18px * 1.6);    }
 
     &__image {
         flex: 0 1 40%;
