@@ -16,85 +16,64 @@ const overlay = document.querySelector('.js-overlay');
 const linkResult = document.querySelector('.js-link-result');
 const bodyDocument = document.querySelector('body');
 
-function openMenu() {
-    bodyDocument.classList.add('scroll-lock');
-	navMenu.classList.add('menu-open');
-    btnMenu.classList.add('menu-open');
-    overlay.classList.add('menu-open');
+
+
+function openCloseMenu() {
+    bodyDocument.classList.toggle('scroll-lock');
+	navMenu.classList.toggle('menu-open');
+    btnMenu.classList.toggle('menu-open');
+    overlay.classList.toggle('menu-open');
 };
 
-function closeMenu() {
-    bodyDocument.classList.remove('scroll-lock');
-	navMenu.classList.remove('menu-open');
-    btnMenu.classList.remove('menu-open');
-    overlay.classList.remove('menu-open');
-};
+btnMenu.addEventListener('click', openCloseMenu);
+btnMenuClose.addEventListener('click', openCloseMenu);
+overlay.addEventListener('click', openCloseMenu);
 
 
-function openPopupMentor() {
-    bodyDocument.classList.add('scroll-lock');
-    popupMentor.classList.add('popup-open');
-    btnMentor.classList.add('popup-open');
 
+linkResult.addEventListener('click', openCloseMenu);
+
+
+
+function openClosePopup(popupName, btnName) {
     if (navMenu.classList.contains('menu-open')) {
-        closeMenu();
-        bodyDocument.classList.add('scroll-lock');
+        openCloseMenu();
+    };
+   
+    bodyDocument.classList.toggle('scroll-lock');
+    popupName.classList.toggle('popup-open');
+
+    if (btnName === btnMentor) {
+        btnName.classList.toggle('popup-open');
     }
 };
 
-function closePopupMentor() {
-    bodyDocument.classList.remove('scroll-lock');
-    popupMentor.classList.remove('popup-open');
-    btnMentor.classList.remove('popup-open');
-};
 
-function openPopupFeedback() {
-    bodyDocument.classList.add('scroll-lock');
-    popupFeedback.classList.add('popup-open');
-    btnFeedback.classList.add('popup-open');
-
-    if (navMenu.classList.contains('menu-open')) {
-        closeMenu();
-        bodyDocument.classList.add('scroll-lock');
-    }
-};
-
-function closePopupFeddback() {
-    bodyDocument.classList.remove('scroll-lock');
-    popupFeedback.classList.remove('popup-open');
-    btnFeedback.classList.remove('popup-open');
-};
-
-
-btnMenu.addEventListener('click', openMenu);
-btnMenuClose.addEventListener('click', closeMenu);
-
-linkResult.addEventListener('click', closeMenu);
-
-overlay.addEventListener('click', closeMenu);
-
-btnMentor.addEventListener('click', function(e) {
+btnMentor.addEventListener('click', (e) => {
     e.preventDefault();
-    openPopupMentor();
+    openClosePopup(popupMentor, btnMentor);
 });
 
-linkMentor.addEventListener('click', function(e) {
+linkMentor.addEventListener('click', (e) => {
     e.preventDefault();
-    openPopupMentor();
-    btnMentor.classList.remove('popup-open');
+    openClosePopup(popupMentor, btnMentor);
 });
 
-btnFeedback.addEventListener('click', function(e) {
-    e.preventDefault();
-    openPopupFeedback();
+btnPopupCloseMentor.addEventListener('click', () => {
+    openClosePopup(popupMentor, btnMentor);
 });
 
-linkFeedback.addEventListener('click', function(e) {
+
+btnFeedback.addEventListener('click', (e) => {
     e.preventDefault();
-    openPopupFeedback();
-    btnMentor.classList.remove('popup-open');
+    openClosePopup(popupFeedback, btnFeedback);
 });
 
-btnPopupCloseMentor.addEventListener('click', closePopupMentor);
+linkFeedback.addEventListener('click', (e) => {
+    e.preventDefault();
+    openClosePopup(popupFeedback, btnFeedback);
+});
 
-btnPopupCloseFeedback.addEventListener('click', closePopupFeddback);
+btnPopupCloseFeedback.addEventListener('click', () => {
+    openClosePopup(popupFeedback, btnFeedback);
+});
